@@ -20,12 +20,13 @@
 
 <body>
   <header 
-    class="container-fluid d-flex flex-row justify-content-between align-items-center border-bottom border-ligth bg-dark fixed-top" style="display:flex;">
+    class="container-fluid py-2 d-flex flex-row justify-content-between align-items-center border-bottom border-ligth bg-dark fixed-top" style="display:flex;">
     <div class="w-25">
-    <img src="assets/images/logo.png" class="align-self-start" rounded-circle alt="logo" width="250px" style="border-radius:50px;"/>
+    <img src="assets/images/logo.png" class="align-self-start" rounded-circle alt="logo" width="200px" style="border-radius:50px;"/>
+
     </div>
     <nav class="navbar navbar-expand-lg navbar-light w-50">
-      <form action="index.php?menuop=<?= $_GET["menuop"]?>" method="POST">
+      <form action="" method="POST">
         <div class="d-flex gap-2">
           <input class="form-control w-75" type="search" placeholder="jhon doe" name="texto_pesquisa" />
           <button class="btn border border-ligth btn-dark" type="submit">Pesquisar</button>

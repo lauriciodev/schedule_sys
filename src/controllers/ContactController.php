@@ -6,8 +6,16 @@ public function __construct(){
   $this->my = new MyService();
 }
 
+//obtendo contato especifico;
+
+public function get($ctt_id){ 
+  $res = $this->my->query
+    ("select * from tbcontatos where ctt_id = $ctt_id");
+return $res;
+}
+
 //obtendo todos os contatos;
-public function getAllContacts(){
+public function getAll(){
 
 // fazendo paginação;
 $quantidade  = 7;
@@ -22,20 +30,21 @@ $res = $this->my->query("select * from tbcontatos
 ORDER BY ctt_name DESC
 LIMIT $inicio, $quantidade");
 
+return $res;
 }
 
 //criando contato
-public function createContact(){
+public function create(){
 //  
 }
 
 //deletando contato
-public function deleteContact(){
+public function delete(){
 //
 }
 
 //editando contato
-public function updateContact(){
+public function update(){
   //
 }
 

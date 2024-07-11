@@ -1,9 +1,18 @@
-<header class="mt-3">
+<style>
+.float__button {
+  position: absolute;
+  bottom: 55px;
+  right: 25px;
+}
+
+</style>
+
+<header>
   <h2 class="text-center text-white">Pagina de contato</h2>
 </header>
 
 
-<a href="index.php?menuop=create-contato" class="btn btn-dark border border-ligth float__button">Novo</a>
+<a href="contacts/form" class="btn btn-primary border border-ligth float__button">Novo</a>
 
 <div class="container-lg d-flex align-itens-center flex-column gap-2" style="height: 400px;">
   <table class="table table text-center table-bordered table-dark table-striped">

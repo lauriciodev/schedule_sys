@@ -1,5 +1,5 @@
 <?php
 $contact = new ContactController();
-$res = $contact->getAllContacts();
+$res = $contact->getAll();
 
 ?>
