@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>Sharknager Task Manager</title>
+  <title>Schedule Sys</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=0.1">
   <link rel="icon" type="image/png" href="img/favicon.png">
@@ -19,19 +19,19 @@
 </head>
 
 <body>
-  <header id="header__container"
-    class="d-flex container-fluid py-2 px-5  align-itens-center justify-content-between border-bottom border-ligth bg-dark fixed-top">
-    <img src="img/logo.png" class="align-self-start" id="logo" alt="logo" />
+  <header 
+    class="container-fluid d-flex flex-row justify-content-between align-items-center border-bottom border-ligth bg-dark fixed-top" style="display:flex;">
+    <div class="w-25">
+    <img src="assets/images/logo.png" class="align-self-start" rounded-circle alt="logo" width="250px" style="border-radius:50px;"/>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light w-50">
-
-
       <form action="index.php?menuop=<?= $_GET["menuop"]?>" method="POST">
         <div class="d-flex gap-2">
           <input class="form-control w-75" type="search" placeholder="jhon doe" name="texto_pesquisa" />
           <button class="btn border border-ligth btn-dark" type="submit">Pesquisar</button>
         </div>
       </form>
-
+    </nav>
 
   </header>
   <div class="container__main vh-100 pt-5 d-flex align-itens-center">
@@ -55,3 +55,4 @@
         </ul>
       </div>
     </div>
+     <main class="col-lg-11 p-5 bg-dark  h-100">

@@ -1,16 +1,7 @@
-[CLI]
-php novel up = atualizar core e modulos
-php novel module up = atualizar modulos
-php novel core up = atualizar core
-dependencias do modulo
+# aprendendo novel
 
-[ROUTES (HTTP.PHP)]
-GET /API/*: CONTROLLER_NAME (METHOD NAME WILL BE ENDPOINT)
+=1 Integrar banco de dados
+-criar tabelas e bancos (erro ao execultar comando php novel database up --create);
 
-[MYSQL]
-- INDEX SÓ FUNCIONA NO UPDATE.
-- INDEX NÃO FUNCIONA COM INT.
-
-[PAGE SNIPPETS]
-- USAR _SNIPPETS/TESTE/TESTE.YML PARA ORGANIZAR ORDEM DE INSERCAO DOS ARQUIVOS DO COMPONENTE
-
+=2 estrutura de pastas
+-entender como funciona o rodape statico;
