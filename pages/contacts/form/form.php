@@ -7,12 +7,14 @@ if(!$ctt_id){
 	$_title = "Novo Contato";
 
 }else{
-	
+
    $contact = new ContactController();
 	 $res = $contact->get($ctt_id);
-	 if(!$res) exit;
-    
-	 print_r($res);
-  $_title = $res['ctt_name'];
+
+
+	 foreach ($res as $key => $r){
+   $_title = $r["ctt_name"];
+	}
+
 }
 ?>

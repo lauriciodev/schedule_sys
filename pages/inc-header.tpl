@@ -35,25 +35,25 @@
     </nav>
 
   </header>
-  <div class="container__main vh-100 pt-5 d-flex align-itens-center">
+  <div class="container__main pt-5 vh-100 pt-1 d-flex align-itens-center">
 
     <!-- Sidebar -->
     <div class="col-lg-1 h-100  pt-5 bg-dark border border-left border-ligth">
       <div class="sidebar">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link text-white" href="index.php?menuop=home">Home</a>
+            <a class="nav-link text-white" href="/home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="index.php?menuop=contato">Contato</a>
+            <a class="nav-link text-white" href="/contacts">Contato</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="index.php?menuop=tarefas">Tarefas</a>
+            <a class="nav-link text-white" href="/tasks">Tarefas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="index.php?menuop=eventos">Eventos</a>
+            <a class="nav-link text-white" href="/events">Eventos</a>
           </li>
         </ul>
       </div>
     </div>
-     <main class="col-lg-11 p-5 bg-dark  h-100">
+     <main class="col-lg-11 pt-5 bg-dark  h-100">

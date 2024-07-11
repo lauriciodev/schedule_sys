@@ -34,8 +34,10 @@ return $res;
 }
 
 //criando contato
-public function create(){
-//  
+public function create($data){
+ $res = $this->my->insert("tbcontatos",$data);
+ return $res;
+
 }
 
 //deletando contato

@@ -47,7 +47,7 @@
         <td scope="row"><?= $data["ctt_date_born"]?></td>
         <td scope="row" class="d-flex gap-2 align-item-center justify-content-center">
           <a class="bg-dark border border-white px-1 rounded"
-            href="index.php?menuop=form-edit-contato&idcontato=<?=$dados["idcontato"]?>">
+            href="contacts/form?ctt_id=<?=$data["ctt_id"]?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" color="yellow" height="12" fill="currentColor"
               class="bi bi-pencil-square" viewBox="0 0 16 16">
               <path
@@ -58,7 +58,7 @@
           </a>
 
           <a class="bg-dark border border-white px-1 rounded"
-            href="index.php?menuop=delete-contato&idcontato=<?=$dados["idcontato"]?>">
+            href="delete?ctt_id=<?=$data["ctt_id"]?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" color="red" height="12" fill="currentColor"
               class="bi bi-trash" viewBox="0 0 16 16">
               <path
