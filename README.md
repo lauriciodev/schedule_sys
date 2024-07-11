@@ -9,3 +9,15 @@ Duvidas
 2_como deve ser inserido parametros de url?°;
 
 3\_ como deve ser inserido as rotas;?
+
+==========================================
+anotaçoes
+==========================================
+
+update
+
+public function update(int $pat_id, $body){
+return $this->my->update("bp_patient", $body, [
+"pat_id" => $pat_id
+]);
+}

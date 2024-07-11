@@ -7,7 +7,6 @@ public function __construct(){
 }
 
 //obtendo contato especifico;
-
 public function get($ctt_id){ 
   $res = $this->my->query
     ("select * from tbcontatos where ctt_id = $ctt_id");
@@ -18,7 +17,7 @@ return $res;
 public function getAll(){
 
 // fazendo paginação;
-$quantidade  = 7;
+$quantidade  = 9;
 
 $pagina = (isset($_GET['pagina'])) ? (int)$_GET['pagina'] : 1;
 
@@ -27,7 +26,7 @@ $pagina = (isset($_GET['pagina'])) ? (int)$_GET['pagina'] : 1;
 $inicio = ($quantidade * $pagina) - $quantidade;
 
 $res = $this->my->query("select * from tbcontatos 
-ORDER BY ctt_name DESC
+ORDER BY ctt_id DESC
 LIMIT $inicio, $quantidade");
 
 return $res;
@@ -42,13 +41,17 @@ public function create($data){
 }
 
 //deletando contato
-public function delete(){
-//
+public function delete($ctt_id){
+ $res = $this->my->query("DELTETR * FROM tbcontatos WHERE ctt_id = $ctt_id");
+ return $res;
 }
 
 //editando contato
-public function update(){
-  //
+public function update(int $ctt_id, $data){
+  $res = $this->my->update("tbcontatos",$data, [
+    "ctt_id" => $ctt_id
+    ]);
+  return $res;
 }
 
 }
