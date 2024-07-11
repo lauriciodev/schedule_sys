@@ -36,6 +36,7 @@ return $res;
 //criando contato
 public function create($data){
  $res = $this->my->insert("tbcontatos",$data);
+ if(!$res) exit;
  return $res;
 
 }
