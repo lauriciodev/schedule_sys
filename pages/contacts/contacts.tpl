@@ -58,7 +58,7 @@
           </a>
 
           <a class="bg-dark border border-white px-1 rounded"
-            href="delete?ctt_id=<?=$data["ctt_id"]?>">
+            href="contacts/form/.post?ctt_id=<?=$data["ctt_id"]?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" color="red" height="12" fill="currentColor"
               class="bi bi-trash" viewBox="0 0 16 16">
               <path

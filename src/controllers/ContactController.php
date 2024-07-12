@@ -42,7 +42,7 @@ public function create($data){
 
 //deletando contato
 public function delete($ctt_id){
- $res = $this->my->query("DELTETR * FROM tbcontatos WHERE ctt_id = $ctt_id");
+ $res = $this->my->query("DELETE FROM tbcontatos WHERE ctt_id = $ctt_id");
  return $res;
 }
 

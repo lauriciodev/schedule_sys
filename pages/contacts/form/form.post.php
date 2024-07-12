@@ -2,8 +2,17 @@
 
 
 $data = $_POST;
+@$ctt_id = $data['ctt_id'];
 
-$ctt_id = $data['ctt_id'];
+$ctt_id_delete = $_GET['ctt_id'];
+
+if($ctt_id_delete){
+     $contact = new ContactController();
+     $res = $contact->delete($ctt_id_delete);
+     
+     header("Location: /contacts");
+}
+
 
 if($ctt_id){
   //update
