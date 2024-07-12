@@ -1,10 +1,10 @@
 <?php
 
 
-$data = $_POST;
+@$data = $_POST;
 @$ctt_id = $data['ctt_id'];
 
-$ctt_id_delete = $_GET['ctt_id'];
+@$ctt_id_delete = $_GET['ctt_id'];
 
 if($ctt_id_delete){
      $contact = new ContactController();

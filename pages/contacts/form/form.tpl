@@ -55,7 +55,7 @@
 
         </div>
 
-        <button type="submit" class="btn btn-success">Criar novo contato</button>
+        <button type="submit" class="btn btn-success"><?= $ctt_id ? 'Salvar': 'Criar' ?></button>
 
         <a href="/contacts" class="btn btn-danger">Cancelar</a>
 
