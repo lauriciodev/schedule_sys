@@ -54,8 +54,8 @@
 
       <div class="form-group w-100">
         <label for="datanasc">Data de Nascimento</label>
-        <input type="date" class="form-control" value="<?= @$res[0]['ctt_date_born']?>" name="ctt_date_born"
-          id="datanasc" placeholder="Data de nascimento">
+        <input type="date" class="form-control" value="<?= date('Y-m-d', strtotime(@$res[0]['ctt_date_born'])) ?>"
+          name="ctt_date_born" id="datanasc" placeholder="Data de nascimento">
       </div>
 
     </div>

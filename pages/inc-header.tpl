@@ -9,20 +9,20 @@
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/index.css">
-<link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
 
 </head>
 
 <body>
-  <header 
-    class="container-fluid py-2 d-flex flex-row justify-content-between align-items-center border-bottom border-ligth bg-dark fixed-top" style="display:flex;">
+  <header
+    class="container-fluid py-2 d-flex flex-row justify-content-between align-items-center border-bottom border-ligth bg-dark fixed-top"
+    style="display:flex;">
     <div class="w-25">
-    <img src="assets/images/logo.png" class="align-self-start" rounded-circle alt="logo" width="200px" style="border-radius:50px;"/>
+      <img src="/assets/images/logo.png" class="align-self-start" rounded-circle alt="logo" width="200px"
+        style="border-radius:50px;" />
 
     </div>
     <nav class="navbar navbar-expand-lg navbar-light w-50">
@@ -56,4 +56,4 @@
         </ul>
       </div>
     </div>
-     <main class="col-lg-11 pt-5 bg-dark  h-100">
+    <main class="col-lg-11 pt-5 bg-dark  h-100">
