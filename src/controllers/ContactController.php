@@ -9,7 +9,7 @@ public function __construct(){
 //obtendo contato especifico;
 public function get($ctt_id){ 
   $res = $this->my->query
-    ("select * from tbcontatos where ctt_id = $ctt_id");
+    ("select * from tbcontatos where ctt_id = :ctt_id", ["ctt_id" => $ctt_id]  );
 return $res;
 }
 
@@ -34,16 +34,14 @@ return $res;
 
 //criando contato
 public function create($data){
- $res = $this->my->insert("tbcontatos",$data);
- if(!$res) exit;
- return $res;
-
+ $id = $this->my->insert("tbcontatos",$data);
+ return $id;
 }
 
 //deletando contato
 public function delete($ctt_id){
- $res = $this->my->query("DELETE FROM tbcontatos WHERE ctt_id = $ctt_id");
- return $res;
+ $this->my->update("tbcontatos",["ctt_status"=>0],["ctt_id"=>$ctt_id]);
+ return true;
 }
 
 //editando contato

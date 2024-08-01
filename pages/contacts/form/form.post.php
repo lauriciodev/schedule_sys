@@ -9,8 +9,7 @@
 if($ctt_id_delete){
      $contact = new ContactController();
      $res = $contact->delete($ctt_id_delete);
-     
-     header("Location: /contacts");
+   back();
 }
 
 
@@ -19,15 +18,14 @@ if($ctt_id){
 $contact = new ContactController();
   $res = $contact->update($ctt_id, $data);
 
-  header ("Location: /contacts");
 }else{
 $contact = new ContactController();
 $res = $contact->create($data);
 if(!$res)exit;
 
-header("Location: /contacts");
-
 
 }
+
+back();
 
 ?>

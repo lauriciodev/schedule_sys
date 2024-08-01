@@ -40,7 +40,7 @@ PAGES:
     - <PAGE>.php
     - /inc-header.tpl
     - <PAGE>.tpl
-    - /inc-footer.tpl
+    - /inc-footer-start.tpl
     - scripts.tpl
 
 URL_MASK:

@@ -4,7 +4,7 @@
 MYSQL:
   "main":
     PORT: 3306
-    NAME: <ENV.MYSQL_DBNAME>
+    NAME: tarefasdb
     HOST: <ENV.MYSQL_HOST>
     USER: <ENV.MYSQL_USER>
     PASS: <ENV.MYSQL_PASS>

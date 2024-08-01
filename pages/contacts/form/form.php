@@ -11,10 +11,7 @@ if(!$ctt_id){
    $contact = new ContactController();
 	 $res = $contact->get($ctt_id);
 
-
-	 foreach ($res as $key => $r){
-   $_title = $r["ctt_name"];
-	}
+	 $_title = $res[0]["ctt_name"];
 
 }
 ?>
