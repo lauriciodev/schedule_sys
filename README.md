@@ -2,22 +2,12 @@
 
 sistema de agendamento de tarefas e eventos com a framework novel
 
-Duvidas
+# tarefas pendentes;
 
-1\_ footer deve ser insedido em cada pagina criada ?;
+## inciar pagina contatos
 
-2_como deve ser inserido parametros de url?°;
+### deletar diretor da pagina do usuario
 
-3\_ como deve ser inserido as rotas;?
+## iniciar pagina home
 
-==========================================
-anotaçoes
-==========================================
-
-update
-
-public function update(int $pat_id, $body){
-return $this->my->update("bp_patient", $body, [
-"pat_id" => $pat_id
-]);
-}
+### ///////
