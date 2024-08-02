@@ -1,4 +1,5 @@
 <?php 
+$my = new MyService();
 $ctt_id = $_POST["id_profile"];
 
 if(isset($ctt_id)){
@@ -8,7 +9,7 @@ if(isset($ctt_id)){
 
 
 
-$targetDir = "uploads/profile-users/"; // Pasta onde as imagens serão salvas
+$targetDir = "public/uploads/profile-users/"; // Pasta onde as imagens serão salvas
 $maxFileSize = 10 * 1024 * 1024; // Limite de tamanho do arquivo em bytes (2MB)
 
 // Criar a pasta se não existir
@@ -32,11 +33,15 @@ if(isset($_FILES["profile-picture"])){
                 // Movendo imagem para a pasta especifica
                if(move_uploaded_file($_FILES["profile-picture"]["tmp_name"], $targetFilePath)){
                $res[0]["ctt_picture"] = $pic_name;
-               $contact = new ContactController();
-               print_r($res);
-               //$result = $contact->update($ctt_id, $res);
+               $teste = $res[0]["ctt_picture"];
+               $result = $my->query("UPDATE tbcontatos  SET ctt_picture = '$teste' WHERE ctt_id = '$ctt_id'");
               
-            //  back();
+                // Construir a URL de redirecionamento sem o parâmetro show-form
+                $redirectUrl = strtok($_SERVER["HTTP_REFERER"], '?'); // Obter URL base
+                $redirectUrl .= "?ctt_id=" . $ctt_id; // Adicionar parâmetros necessários
+                
+                header("Location: $redirectUrl");
+                exit();
               
       }      
                  

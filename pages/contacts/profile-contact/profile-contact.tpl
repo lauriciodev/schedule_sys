@@ -29,15 +29,20 @@ if($data["ctt_picture"] === null){
   ?>
 
       <div class=" w-100" style=" position:relative;">
-        <img class="rounded-circle w-75" src="/assets/images/logo.png" alt="img user">
+        <img class="rounded-circle w-75" src="/assets/images/default-user.png" alt="img user">
         <a style="position: absolute; top:3px;" href="?ctt_id=<?= @$data["ctt_id"]; ?>&show-form=1"
           class="btn btn-primary btn-sm"><i class="bi bi-upload"></i></a>
       </div>
       <?php
     }else{
       ?>
-      <div class=" w-100" style=" position:relative;">
-        <img class="rounded-circle w-75" src="/assets/images/<?= @$data["ctt_picture"]; ?>" alt="img user">
+      <div class=" w-75" style="position:relative;">
+        <img class="rounded-circle border border-white" style="object-fit: contain;
+           width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        " src="/uploads/profile-users/<?= @$data["ctt_picture"]; ?>" alt="img user">
         <a style="position: absolute; top:3px;" href="?ctt_id=<?= @$data["ctt_id"]; ?>&show-form=1"
           class="btn btn-primary btn-sm"><i class="bi bi-upload"></i></a>
       </div>
