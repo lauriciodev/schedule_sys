@@ -30,7 +30,7 @@
 
     <tbody>
 
-      <?php foreach($res as $data): ?>
+      <?php foreach($current_items as $data): ?>
       <tr>
         <td scope="row"><a href="/contacts/profile-contact?ctt_id=<?= $data["ctt_id"] ?>">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle"
@@ -74,3 +74,22 @@
     </tbody>
 
   </table>
+  <?php
+  echo '<div class="pagination d-flex gap-2">';
+if ($current_page > 1) {
+    echo '<a href="?page=' . ($current_page - 1) . '">Anterior</a>';
+}
+
+for ($page = 1; $page <= $total_pages; $page++) {
+    if ($page == $current_page) {
+        echo '<strong class="text-white">' . $page . '</strong>';
+    } else {
+        echo '<a href="contacts?page=' . $page . '">' . $page . '</a>';
+    }
+}
+
+if ($current_page < $total_pages) {
+    echo '<a href="?page=' . ($current_page + 1) . '">Proxima</a>';
+}
+echo '</div>';
+?>

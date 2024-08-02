@@ -16,19 +16,9 @@ return $res;
 //obtendo todos os contatos;
 public function getAll(){
 
-// fazendo paginação;
-$quantidade  = 9;
-
-$pagina = (isset($_GET['pagina'])) ? (int)$_GET['pagina'] : 1;
-
-//calculo de valor da pagina;
-
-$inicio = ($quantidade * $pagina) - $quantidade;
-
 $res = $this->my->query("select * from tbcontatos 
 WHERE ctt_status = 1
-ORDER BY ctt_id DESC
-LIMIT $inicio, $quantidade");
+ORDER BY ctt_id DESC");
 
 return $res;
 }

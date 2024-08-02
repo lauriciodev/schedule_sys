@@ -1,6 +1,15 @@
 <?php 
 $my = new MyService();
-$ctt_id = $_POST["id_profile"];
+@$ctt_id = $_POST["id_profile"];
+
+@$ctt_id_delete = $_GET["ctt_id"];
+
+if($ctt_id_delete){
+    $contact = new ContactController();
+    $res = $contact->delete($ctt_id_delete);
+    header ("Location /contacts");
+    exit();
+   } 
 
 if(isset($ctt_id)){
   $contact = new ContactController();
