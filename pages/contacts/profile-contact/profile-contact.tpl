@@ -11,8 +11,8 @@ foreach($res as $data){
 
   if(isset($_GET["show-form"]) && $_GET["show-form"] == 1){
   ?>
-      <form action="" method="POST" enctype="multipart/form-data" class="bg-dark border border-white
-      text-white w-25 p-3"
+      <form action="/.post" method="POST" enctype="multipart/form-data" class="bg-dark border border-white
+        text-white w-25 p-3"
         style="position: fixed; top:100px; z-index: 300; display:flex; flex-direction: column; gap:10px;">
         <a style="position: absolute; right:2px; top:3px;" href="?ctt_id=<?= @$data["ctt_id"]; ?>"
           class="btn btn-warning btn-sm"><i class="bi bi-x-circle"></i></a>
