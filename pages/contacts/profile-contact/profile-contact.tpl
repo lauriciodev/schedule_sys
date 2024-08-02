@@ -66,7 +66,7 @@ if($data["ctt_picture"] === null){
     </div>
   </div>
   <div>
-    <a href="form?ctt_id=<?=$data["ctt_id"]?>" class="btn btn-primary btn-sm"><i class="ri-home-2-fill"></i></a>
+    <a href="/contacts" class="btn btn-primary btn-sm"><i class="ri-home-2-fill"></i></a>
     <a href="form?ctt_id=<?=$data["ctt_id"]?>" class="btn btn-warning btn-sm"><i class="ri-edit-box-fill"></i></a>
     <a href="<?= PAGE_POST ?>?ctt_id=<?=$data["ctt_id"]?>" class=" btn btn-danger btn-sm"><i
         class="ri-delete-bin-fill"></i></a>

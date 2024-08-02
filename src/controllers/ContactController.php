@@ -26,6 +26,7 @@ $pagina = (isset($_GET['pagina'])) ? (int)$_GET['pagina'] : 1;
 $inicio = ($quantidade * $pagina) - $quantidade;
 
 $res = $this->my->query("select * from tbcontatos 
+WHERE ctt_status = 1
 ORDER BY ctt_id DESC
 LIMIT $inicio, $quantidade");
 

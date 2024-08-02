@@ -8,3 +8,4 @@ tbcontatos: # Melhor horário para contato (Obs: Três possibilidades por dia)
   ctt_favorite: int
   ctt_adress: str
   ctt_picture: str
+  ctt_status: int
